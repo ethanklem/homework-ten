@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html,
+body {
+    height: 100%;
+}
+
+h1,
+h2, 
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-bottom: 16px;
+}
+
+@font-face {
+    font-family: GillSans;
+    src: url(fonts/GillSans.ttc);
+}
+
+@font-face {
+    font-family: Proxima;
+    src: url(fonts/ProximaNovaScOsfExtraCondensed.ttf);
+}
+
+@font-face {
+    font-family: PThin;
+    src: url(fonts/Proxima-Nova-Thin.otf);
+}
+
+@font-face {
+    font-family: ExtraCondense;
+    src: url(fonts/FontsFree-Net-Proxima-Nova-ExCn-Reg.otf);
+}

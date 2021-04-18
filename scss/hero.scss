@@ -1,0 +1,85 @@
+.hero {
+    max-width: 1280px;
+    height: 500px;
+    margin: 0 auto;
+    background-image: linear-gradient(to right, $overlay-black, $overlay-black), url(../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 30px;
+
+
+ 
+    .homeText {
+        margin-top: 89px;
+        max-width: 1280px;
+        text-align: center;
+        color: $site-white;
+        
+
+
+        .title {
+            font-size: 60px;
+            margin-right: 40px;
+            font-family: Proxima;
+        }
+
+        .homesentence {
+            font-size: 20px;
+            padding-bottom: 20px;
+            margin-right: 40px;
+            font-family: GillSans;
+        }
+
+        .homeButton {
+            background-color: $site-blue;
+            padding: 10px 25px;
+            color: $site-white;
+            font-size: 15px;
+            text-decoration: none;
+            margin-right: 40px;
+            font-family: GillSans;
+            
+        }
+
+
+    }
+
+
+}
+
+
+@media only screen and (max-width: 1060px) {
+
+
+    .homeText {
+    
+        
+        .title {
+
+            margin-left: 30px;
+       
+        }
+
+        .homesentence {
+ 
+  
+            margin-left: 30px;
+
+        }
+
+        .homeButton {
+
+           margin-left: 30px;
+  
+            
+        }
+
+
+    }
+
+
+
+
+}
+

@@ -1,0 +1,351 @@
+.tour {
+
+    padding-top: 50px;
+    padding-bottom: 100px;
+    font-family: proxima-nova-condensed, sans-serif;
+
+    header {
+        @include center(981px);
+        margin: 0 auto;
+        height: 200px;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../images/tours-header.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+
+        span {
+            color: white;
+            font-size: 60px;
+            font-family: Proxima;
+            text-transform: uppercase;
+            
+        } 
+    }
+
+    .tours {
+        @include center(818px, 48px auto 0 auto);
+        margin: 48px auto 0 auto;
+        max-width: 818px;
+        min-height: 200px;
+        //background-color: black; 
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+     
+
+        
+        .tourPromo {
+            width: 236px;
+            height: 304px;
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../images/tour-01.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            //margin: 0 55px 55px 0;
+            margin-bottom: 55px;
+            text-align: center;
+            padding-top: 30px;
+            color: white;
+            font-family: Proxima;
+
+            .place {
+                font-size: 60px;
+            }
+    
+            .price {
+                font-size: 30px;
+                margin-top: -20px;
+                padding-bottom: 50px
+            }
+    
+
+
+            .promoBtn {
+                @include siteButton(10px 30px, 15px);
+                cursor: pointer;
+                
+                
+            }
+            
+        }
+
+        .tourPromo2 {
+            width: 236px;
+            height: 304px;
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../images/tour-02.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            //margin: 0 55px 55px 0;
+            margin-bottom: 55px;
+            text-align: center;
+            padding-top: 30px;
+            color: white;
+            font-family: Proxima;
+          
+
+            .place {
+                font-size: 60px;
+            }
+    
+            .price {
+                font-size: 30px;
+                margin-top: -20px;
+                padding-bottom: 50px
+            }
+    
+
+            .promoBtn {
+                @include siteButton(10px 30px, 15px);
+                cursor: pointer;
+                
+            }
+      }
+
+      .tourPromo3 {
+        width: 236px;
+        height: 304px;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../images/tour-03.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        //margin: 0 55px 55px 0;
+        margin-bottom: 55px;
+        text-align: center;
+        padding-top: 30px;
+        color: white;
+        font-family: Proxima;
+
+        .place {
+            font-size: 60px;
+        }
+
+        .price {
+            font-size: 30px;
+            margin-top: -20px;
+            padding-bottom: 50px
+        }
+
+       
+        .promoBtn {
+            @include siteButton(10px 30px, 15px);
+            cursor: pointer;
+            
+        }
+    }
+
+    .tourPromo4 {
+        width: 236px;
+        height: 304px;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../images/tour-04.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        //margin: 0 55px 55px 0;
+        margin-bottom: 55px;
+        text-align: center;
+        padding-top: 30px;
+        color: white;
+        font-family: Proxima;
+
+        .place {
+            font-size: 60px;
+        }
+
+        .price {
+            font-size: 30px;
+            margin-top: -20px;
+            padding-bottom: 50px
+        }
+
+        
+          
+        .promoBtn {
+            @include siteButton(10px 30px, 15px);
+            cursor: pointer;
+            
+        }
+    }
+
+    .tourPromo5 {
+        width: 236px;
+        height: 304px;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../images/tour-05.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        //margin: 0 55px 55px 0;
+        margin-bottom: 55px;
+        text-align: center;
+        padding-top: 30px;
+        color: white;
+        font-family: Proxima;
+
+        .place {
+            font-size: 60px;
+        }
+
+        .price {
+            font-size: 30px;
+            margin-top: -20px;
+            padding-bottom: 50px
+        }
+
+
+        .promoBtn {
+            @include siteButton(10px 30px, 15px);
+            cursor: pointer;
+            
+        }
+    }
+
+    .tourPromo6 {
+        width: 236px;
+        height: 304px;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../images/tour-06.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        //margin: 0 55px 55px 0;
+        margin-bottom: 55px;
+        text-align: center;
+        padding-top: 30px;
+        color: white;
+        font-family: Proxima;
+
+        .place {
+            font-size: 60px;
+        }
+
+        .price {
+            font-size: 30px;
+            margin-top: -20px;
+            padding-bottom: 50px
+        }
+
+
+        .promoBtn {
+            @include siteButton(10px 30px, 15px);
+            cursor: pointer;
+            
+        }
+    }
+
+    .tourPromo7 {
+        width: 236px;
+        height: 304px;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../images/tour-07.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        //margin: 0 55px 55px 0;
+        margin-bottom: 55px;
+        text-align: center;
+        padding-top: 30px;
+        color: white;
+        font-family: Proxima;
+
+        .place {
+            font-size: 60px;
+        }
+
+        .price {
+            font-size: 30px;
+            margin-top: -20px;
+            padding-bottom: 50px
+        }
+
+
+        .promoBtn {
+            @include siteButton(10px 30px, 15px);
+            cursor: pointer;
+            
+        }
+    }
+
+    .tourPromo8 {
+        width: 236px;
+        height: 304px;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../images/tour-08.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        //margin: 0 55px 55px 0;
+        margin-bottom: 55px;
+        text-align: center;
+        padding-top: 30px;
+        color: white;
+        font-family: Proxima;
+
+        .place {
+            font-size: 60px;
+        }
+
+        .price {
+            font-size: 30px;
+            margin-top: -20px;
+            padding-bottom: 50px
+        }
+
+
+        .promoBtn {
+            @include siteButton(10px 30px, 15px);
+            cursor: pointer;
+            
+        }
+    }
+
+    .tourPromo9 {
+        width: 236px;
+        height: 304px;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../images/tour-09.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        //margin: 0 55px 55px 0;
+        margin-bottom: 55px;
+        text-align: center;
+        padding-top: 30px;
+        color: white;
+        font-family: Proxima;
+
+        .place {
+            font-size: 60px;
+        }
+
+        .price {
+            font-size: 30px;
+            margin-top: -20px;
+            padding-bottom: 50px
+        }
+
+
+        .promoBtn {
+            @include siteButton(10px 30px, 15px);
+            cursor: pointer;
+            
+        }
+    }
+
+    }
+}
+
+@media all and (max-width:818px) {
+    .tour {
+
+        .tours {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}

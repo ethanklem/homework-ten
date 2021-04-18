@@ -1,0 +1,101 @@
+.blog {
+    max-width: 980px;
+    //background-color: aquamarine;
+    margin: 0 auto;
+    padding-top: 98px;
+   
+
+    h1 {
+            //font-family: ExtraCondense;
+            text-transform: uppercase;
+            border-bottom: 2px solid black;
+            display: inline-block;
+            padding-right: 30px;
+            font-size: 30px;
+            //font-family: proxima-nova-condensed, sans-serif;
+            font-weight: 200;
+            font-family: ExtraCondense;
+         
+            
+    }
+
+    .blogPost {
+        display: flex;
+        padding-top: 20px;
+       
+
+    .date {
+        width: 60px;
+        height: 60px;
+        background-color: $site-blue;
+        margin-right: 20px;
+        
+
+        .dateText {
+            color: white;
+            font-size: 22px;
+            font-family: GillSans;
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding-top: 10px;
+
+            .month {
+                font-size: 12px;
+                font-weight: lighter;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .picture {
+        width: 900px;
+        height: 259px;
+        background-image: url(../images/blog.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+    .blogText {
+        width: 380px;
+        margin-left: 80px;
+        padding-top: 20px;
+       
+
+        .blackTxt {
+           
+        font-size: 15px;
+        font-family: GillSans;
+
+            
+        }
+
+        .blueTxt {
+            color: $site-blue;
+            font-size: 13px;
+
+        }
+
+        
+        .blueTxt2 {
+            color: $site-blue;
+            font-size: 13px;
+            padding-bottom: 120px;
+
+        }
+    }
+
+}
+
+@media only screen and (max-width: 1060px) {
+    .blog {
+        padding: 20px;
+        margin-top: 100px;
+
+        .blogText {
+            margin-left: 45px;
+        }
+    }
+}

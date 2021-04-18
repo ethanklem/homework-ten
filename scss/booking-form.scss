@@ -1,0 +1,433 @@
+.booking-form {
+    max-width: 1280px;
+    min-height: 890px;
+    margin: 0 auto;
+    padding-top: 30px;
+    font-family: GillSans;
+
+
+    .form {
+        margin-left: 210px;
+    }
+
+    h1 {
+        color: black;
+        font-size: 60px;
+        padding-bottom: 10px;
+        font-family: Proxima;
+
+    }
+
+    .first-inputs {
+        display: flex;
+        
+     
+
+        ::placeholder {
+            color: black;
+            font-size: 18px;
+            padding-left: 20px;
+            font-family: GillSans;
+        }
+        
+    }
+
+    .inputname {
+        border: 1px solid $site-blue;
+        background-color: transparent;
+        width: 344px;
+        height: 58px;
+        
+        
+    }
+
+    .inputemail {
+        border: 1px solid $site-blue;
+        background-color: transparent;
+        width: 453px;
+        height: 58px;
+        margin-left: 20px;
+    }
+
+
+    .check {
+        display: flex;
+
+        img {
+            position: absolute;
+            width: 18px;
+            height: 18px;
+            margin-top: 18px;
+            margin-left: -30px;
+
+        }
+
+        ::placeholder {
+            color: black;
+            font-size: 18px;
+            padding-left: 20px;
+            font-family: GillSans;
+        }
+        
+
+        .checkText {
+            font-size: 18px;
+            padding-right: 25px;
+            margin-top: 18px;
+        }
+
+        .checkInput {
+            border: 1px solid $site-blue;
+            background-color: transparent;
+            width: 727px;
+            height: 58px;
+            
+        }
+
+
+    }
+
+    .checkout {
+        display: flex;
+
+        img {
+            position: absolute;
+            width: 18px;
+            height: 18px;
+            margin-top: 18px;
+            margin-left: -30px;
+
+        }
+
+
+        ::placeholder {
+            color: black;
+            font-size: 18px;
+            padding-left: 20px;
+            font-family: GillSans;
+        }
+        
+
+        .checkoutText {
+            font-size: 18px;
+            padding-right: 16px;
+            margin-top: 18px;
+        }
+
+        .checkoutInput {
+            border: 1px solid $site-blue;
+            background-color: transparent;
+            width: 727px;
+            height: 58px;
+            
+        }
+
+
+    }
+
+
+    .triple {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 190px;
+        width: 818px;
+
+        .adult {
+            display: flex;
+
+            img {
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                margin-left: 160px;
+                margin-top: 18px;
+    
+            }
+    
+
+            ::placeholder {
+                color: black;
+                font-size: 18px;
+                padding-left: 20px;
+                font-family: GillSans;           
+            }
+
+            .adultText {
+                font-size: 18px;
+                padding-right: 16px;
+                margin-top: 18px;
+            }
+
+            .adultInput {
+                border: 1px solid $site-blue;
+                background-color: transparent;
+                width: 103px;
+                height: 58px;
+                margin-left: 33px;
+            }
+
+        }
+
+        .children {
+            display: flex;
+
+            img {
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                margin-left: 150px;
+                margin-top: 18px;
+    
+            }
+    
+
+            ::placeholder {
+                color: black;
+                font-size: 18px;
+                padding-left: 20px;
+                font-family: GillSans;
+            }
+
+            .childrenText {
+                font-size: 18px;
+                padding-right: 16px;
+                margin-top: 18px;
+                
+            }
+
+            .childrenInput {
+                border: 1px solid $site-blue;
+                background-color: transparent;
+                width: 103px;
+                height: 58px;
+            }
+
+        }
+
+        .rooms {
+            display: flex;
+
+            img {
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                margin-left: 140px;
+                margin-top: 18px;
+    
+            }
+
+
+            ::placeholder {
+                color: black;
+                font-size: 18px;
+                padding-left: 20px;
+                font-family: GillSans;
+            }
+
+            .roomsText {
+                font-size: 18px;
+                padding-right: 16px;
+                margin-top: 18px;
+            }
+
+            .roomsInput {
+                border: 1px solid $site-blue;
+                background-color: transparent;
+                width: 103px;
+                height: 58px;
+            }
+
+
+
+        }
+
+
+
+
+
+
+    }
+
+    .message {
+        
+
+        ::placeholder {
+            color: black;
+            font-size: 18px;
+            padding-left: 20px;
+            font-family: GillSans;
+            
+            
+        
+            }
+
+        .messageInput {
+            border: 1px solid $site-blue;
+            background-color: transparent;
+            width: 818px;
+            height: 192px;
+            padding-bottom: 140px;
+            
+           
+        }
+
+        
+
+    }
+  
+
+
+    .submit {
+        width: 813px;
+            height: 60px;
+            border-radius: 50px;
+            font-size: 15px;
+            background-color: $site-blue;
+            color: white;
+           border-style: none;
+           margin-top: 50px;
+           cursor: pointer;
+           font-family: GillSans;
+         
+           
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1060px) {
+
+    .booking-form {
+        width: 236px;
+        
+      
+
+        .form {
+            margin-left: 0px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+        
+
+        .first-inputs {
+            flex-direction: column;
+            
+            
+
+        }
+
+        
+    .inputname {
+        width: 276px;
+        margin-bottom: 10px;
+  
+    }
+
+    .inputemail {
+        width: 276px;
+        margin-left: 0px;
+        
+     
+    }
+
+    .check {
+
+        .checkInput {
+            width: 200px;   
+        }
+
+
+    }
+
+    .checkout {
+
+        .checkoutInput {
+            width: 200px;
+            margin-left: 9px;
+            
+        }
+    }
+
+    .triple {
+        flex-direction: column;
+        width: 200px;
+        
+        .adult {
+
+            img {
+                margin-left: 150px;
+    
+            }
+
+            .adultInput {
+                width: 103px;
+                margin-left: 23px;
+                margin-bottom: 10px;
+            }
+
+        }
+
+        .children {
+
+
+            img {
+
+                margin-left: 150px;
+       
+    
+            }
+    
+
+
+            .childrenInput {
+                width: 103px;
+                margin-bottom: 10px;
+            }
+
+        }
+
+        .rooms {
+
+            img {
+                margin-left: 150px;
+    
+            }
+
+
+            .roomsInput {
+
+                width: 103px;
+                margin-left: 11px;
+            }
+        }
+
+    }
+
+    .message {
+        
+        .messageInput {
+            width: 276px;  
+        }
+
+    }
+
+
+    .submit {
+        width: 276px;
+        
+    }
+
+
+    }
+
+  }

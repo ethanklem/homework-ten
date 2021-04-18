@@ -1,0 +1,137 @@
+.about{
+    max-width: 980px;
+    // background-color: aquamarine;
+    margin: 0 auto;
+    padding-top: 98px;
+
+
+    .about-top-section {
+        font-family: GillSans;
+        font-size: 16px;
+        
+        
+
+        h1 {
+            //font-family: ExtraCondense;
+            text-transform: uppercase;
+            //font-weight: lighter;
+            border-bottom: 2px solid black;
+            display: inline-block;
+            padding-right: 30px;
+            font-size: 60px;
+            font-family: proxima-nova-condensed, sans-serif;
+            font-weight: 200;
+            font-style: normal;
+            
+            
+        }
+
+        p {
+            padding-top: 13px;
+        }
+    }
+    
+
+    .about-bottom-secion {
+        margin-top: 120px;
+        padding-bottom: 117px;
+
+        h3 {
+            //font-family: ExtraCondense;
+            text-transform: uppercase;
+            //font-weight: lighter;
+            border-bottom: 2px solid black;
+            display: inline-block;
+            padding-right: 30px;
+            font-size: 40px;
+            font-family: proxima-nova-condensed, sans-serif;
+            font-weight: 200;
+            font-style: normal;
+        }
+
+        .client {
+            padding-top: 14px;
+            max-width: 676px;
+            min-height: 150px;
+            margin-bottom: 16px;
+            display: flex;
+            font-family: GillSans;
+            font-style: italic;
+            font-size: 16px;
+            
+
+
+            .client-image1 {
+                width: 450px;
+                height: 150px;
+                background-image: url(../images/about-client-01.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+
+
+            }
+
+            .client-image2 {
+                width: 450px;
+                height: 150px;
+                background-image: url(../images/about-client-02.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                
+               
+            }
+    
+            .client-quote {
+                position: relative;
+                // background-color: blue;
+                min-height: 50px;
+                width: 100%;
+                padding-left: 25px;
+                
+
+                p {
+                    &:last-of-type {
+                        margin-bottom: 25px;
+                       
+                    }
+                }
+
+
+
+                .client-name {
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    color: $site-blue;
+                    font-size: 20px;
+                    //font-family: PThin;
+                    font-family: proxima-nova-condensed, sans-serif;
+                    font-weight: 100;
+                    font-style: normal;
+                    text-transform: uppercase;
+                    
+                   
+                
+                }
+            }
+
+        }
+
+    
+
+    }
+
+}
+
+
+@media only screen and (max-width: 980px) {
+    .about {
+
+        padding: 10px;
+        padding-top: 98px;
+
+      
+    }
+}

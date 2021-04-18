@@ -1,0 +1,167 @@
+.special {
+    max-width: 980px;
+    //background-color: aquamarine;
+    margin: 0 auto;
+    padding-top: 98px;
+    
+
+    h1 {
+        //font-family: ExtraCondense;
+        text-transform: uppercase;
+        border-bottom: 2px solid black;
+        display: inline-block;
+        //padding-right: 30px;
+        font-size: 30px;
+        //font-family: proxima-nova-condensed, sans-serif;
+        font-weight: 200;
+        font-family: ExtraCondense;
+        
+        
+    }
+    
+.topSpecial {
+    display: flex;
+    padding-bottom: 60px;
+    padding-top: 35px;
+
+    .image {
+        width: 199px;
+        height: 287px;
+        background-image: url(../images/special-offer-01.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+    .info {
+        width: 290px;
+        height: 287px;
+        padding-left: 20px;
+      
+        .price {
+            position: absolute;
+            margin-left: 190px;
+            margin-top: -43px;
+            color: #FF7D38;
+            font-family: ExtraCondense;
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+
+        .text {
+            font-size: 16px;
+            font-family: GillSans;
+            padding-bottom: 70px;
+            
+        }
+
+        .learnbtn {
+            width: 133px;
+            height: 40px;
+            border-radius: 30px;
+            background-color: $site-blue;
+            color: white;
+            cursor: pointer;
+            border: none;
+            font-family: GillSans;
+            font-size: 15px;
+            text-transform: uppercase;
+            
+        }
+
+    }
+     
+    }
+
+    .topSpecial2 {
+        display: flex;
+        padding-bottom: 100px;
+        
+    
+    
+        .image2 {
+            width: 199px;
+            height: 287px;
+            background-image: url(../images/special-offer-02.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    
+        .info {
+            width: 290px;
+            height: 287px;
+            padding-left: 20px;
+          
+            .price {
+                position: absolute;
+                margin-left: 205px;
+                margin-top: -43px;
+                color: #FF7D38;
+                font-family: ExtraCondense;
+                font-size: 20px;
+                text-transform: uppercase;
+            }
+    
+            .text {
+                font-size: 16px;
+                font-family: GillSans;
+                padding-bottom: 70px;
+                
+            }
+    
+            .learnbtn {
+                width: 133px;
+                height: 40px;
+                border-radius: 30px;
+                background-color: $site-blue;
+                color: white;
+                cursor: pointer;
+                border: none;
+                font-family: GillSans;
+                font-size: 15px;
+                text-transform: uppercase;
+                
+            }
+    
+        }
+         
+        }
+
+}
+
+@media only screen and (max-width: 980px) {
+    .special {
+
+        padding: 10px;
+        margin-top: 100px;
+
+        .topSpecial2 {
+
+        .info {
+
+            .price {
+                margin-left: 200px
+            }
+
+        }
+    
+       
+        }
+
+        .topSpecial {
+
+            .info {
+    
+                .price {
+                    margin-left: 180px
+                }
+    
+            }
+        
+           
+            }
+      
+    }
+}

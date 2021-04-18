@@ -1,0 +1,2410 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+@font-face {
+  font-family: GillSans;
+  src: url(fonts/GillSans.ttc);
+}
+@font-face {
+  font-family: Proxima;
+  src: url(fonts/ProximaNovaScOsfExtraCondensed.ttf);
+}
+@font-face {
+  font-family: PThin;
+  src: url(fonts/Proxima-Nova-Thin.otf);
+}
+@font-face {
+  font-family: ExtraCondense;
+  src: url(fonts/FontsFree-Net-Proxima-Nova-ExCn-Reg.otf);
+}
+.hero {
+  max-width: 1280px;
+  height: 500px;
+  margin: 0 auto;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 30px;
+}
+.hero .homeText {
+  margin-top: 89px;
+  max-width: 1280px;
+  text-align: center;
+  color: #fff;
+}
+.hero .homeText .title {
+  font-size: 60px;
+  margin-right: 40px;
+  font-family: Proxima;
+}
+.hero .homeText .homesentence {
+  font-size: 20px;
+  padding-bottom: 20px;
+  margin-right: 40px;
+  font-family: GillSans;
+}
+.hero .homeText .homeButton {
+  background-color: #79ADDC;
+  padding: 10px 25px;
+  color: #fff;
+  font-size: 15px;
+  text-decoration: none;
+  margin-right: 40px;
+  font-family: GillSans;
+}
+
+@media only screen and (max-width: 1060px) {
+  .homeText .title {
+    margin-left: 30px;
+  }
+  .homeText .homesentence {
+    margin-left: 30px;
+  }
+  .homeText .homeButton {
+    margin-left: 30px;
+  }
+}
+.promo-tours {
+  max-width: 1280px;
+  min-height: 304px;
+  margin: -50px auto 0 auto;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 210px;
+  padding-right: 210px;
+}
+.promo-tours .promoIsrael {
+  height: 304px;
+  width: 236px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour-01.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-right: 50px;
+  text-align: center;
+  padding-top: 30px;
+  color: white;
+  font-family: Proxima;
+}
+.promo-tours .promoIsrael .place {
+  font-size: 60px;
+}
+.promo-tours .promoIsrael .price {
+  font-size: 30px;
+  margin-top: -20px;
+}
+.promo-tours .promoIsrael .tourButton {
+  width: 133px;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 15px;
+  background-color: #79ADDC;
+  color: white;
+  border-style: none;
+  margin-top: 50px;
+  cursor: pointer;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.promo-tours .promoUSA {
+  height: 304px;
+  width: 236px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour-02.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-right: 50px;
+  text-align: center;
+  padding-top: 30px;
+  color: white;
+  font-family: Proxima;
+}
+.promo-tours .promoUSA .place {
+  font-size: 60px;
+}
+.promo-tours .promoUSA .price {
+  font-size: 30px;
+  margin-top: -20px;
+}
+.promo-tours .promoUSA .tourButton {
+  width: 133px;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 15px;
+  background-color: #79ADDC;
+  color: white;
+  border-style: none;
+  margin-top: 50px;
+  cursor: pointer;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.promo-tours .promoAustralia {
+  height: 304px;
+  width: 236px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour-03.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-right: 50px;
+  text-align: center;
+  padding-top: 30px;
+  color: white;
+  font-family: Proxima;
+}
+.promo-tours .promoAustralia .place {
+  font-size: 60px;
+}
+.promo-tours .promoAustralia .price {
+  font-size: 30px;
+  margin-top: -20px;
+}
+.promo-tours .promoAustralia .tourButton {
+  width: 133px;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 15px;
+  background-color: #79ADDC;
+  color: white;
+  border-style: none;
+  margin-top: 50px;
+  cursor: pointer;
+  font-family: GillSans;
+}
+
+@media only screen and (max-width: 1060px) {
+  .promo-tours {
+    width: 236px;
+    flex-direction: column;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .promo-tours .promoIsrael {
+    margin-bottom: 30px;
+  }
+  .promo-tours .promoUSA {
+    margin-bottom: 30px;
+  }
+  .promo-tours .promoAustralia {
+    margin-bottom: 30px;
+  }
+}
+footer {
+  max-width: 1280px;
+  height: 100px;
+  margin: 0 auto;
+  background-color: #79ADDC;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  padding-top: 45px;
+  font-family: GillSans;
+}
+footer .logofoot {
+  width: 92px;
+  height: 42px;
+  border-color: white;
+  border-style: solid;
+  border-width: 2px;
+  margin-top: -15px;
+}
+footer .logofoot p {
+  font-size: 20px;
+  color: white;
+  font-family: GillSans;
+  margin-top: 19px;
+  letter-spacing: 1.8px;
+}
+footer .footerText {
+  font-size: 12px;
+}
+footer .socials {
+  font-size: 20px;
+  width: 116px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1060px) {
+  footer {
+    margin-top: 50px;
+    padding-left: 20px;
+  }
+  footer .footerText {
+    margin-left: 60px;
+  }
+  footer .logofoot {
+    width: 92px;
+    height: 42px;
+    border-color: white;
+    border-style: solid;
+    border-width: 2px;
+  }
+  footer .logofoot p {
+    font-size: 13px;
+    color: white;
+    margin-top: 19px;
+    letter-spacing: 1.8px;
+  }
+  footer .socials {
+    padding-right: 20px;
+  }
+}
+.booking-form {
+  max-width: 1280px;
+  min-height: 890px;
+  margin: 0 auto;
+  padding-top: 30px;
+  font-family: GillSans;
+}
+.booking-form .form {
+  margin-left: 210px;
+}
+.booking-form h1 {
+  color: black;
+  font-size: 60px;
+  padding-bottom: 10px;
+  font-family: Proxima;
+}
+.booking-form .first-inputs {
+  display: flex;
+}
+.booking-form .first-inputs ::placeholder {
+  color: black;
+  font-size: 18px;
+  padding-left: 20px;
+  font-family: GillSans;
+}
+.booking-form .inputname {
+  border: 1px solid #79ADDC;
+  background-color: transparent;
+  width: 344px;
+  height: 58px;
+}
+.booking-form .inputemail {
+  border: 1px solid #79ADDC;
+  background-color: transparent;
+  width: 453px;
+  height: 58px;
+  margin-left: 20px;
+}
+.booking-form .check {
+  display: flex;
+}
+.booking-form .check img {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  margin-top: 18px;
+  margin-left: -30px;
+}
+.booking-form .check ::placeholder {
+  color: black;
+  font-size: 18px;
+  padding-left: 20px;
+  font-family: GillSans;
+}
+.booking-form .check .checkText {
+  font-size: 18px;
+  padding-right: 25px;
+  margin-top: 18px;
+}
+.booking-form .check .checkInput {
+  border: 1px solid #79ADDC;
+  background-color: transparent;
+  width: 727px;
+  height: 58px;
+}
+.booking-form .checkout {
+  display: flex;
+}
+.booking-form .checkout img {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  margin-top: 18px;
+  margin-left: -30px;
+}
+.booking-form .checkout ::placeholder {
+  color: black;
+  font-size: 18px;
+  padding-left: 20px;
+  font-family: GillSans;
+}
+.booking-form .checkout .checkoutText {
+  font-size: 18px;
+  padding-right: 16px;
+  margin-top: 18px;
+}
+.booking-form .checkout .checkoutInput {
+  border: 1px solid #79ADDC;
+  background-color: transparent;
+  width: 727px;
+  height: 58px;
+}
+.booking-form .triple {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 190px;
+  width: 818px;
+}
+.booking-form .triple .adult {
+  display: flex;
+}
+.booking-form .triple .adult img {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin-left: 160px;
+  margin-top: 18px;
+}
+.booking-form .triple .adult ::placeholder {
+  color: black;
+  font-size: 18px;
+  padding-left: 20px;
+  font-family: GillSans;
+}
+.booking-form .triple .adult .adultText {
+  font-size: 18px;
+  padding-right: 16px;
+  margin-top: 18px;
+}
+.booking-form .triple .adult .adultInput {
+  border: 1px solid #79ADDC;
+  background-color: transparent;
+  width: 103px;
+  height: 58px;
+  margin-left: 33px;
+}
+.booking-form .triple .children {
+  display: flex;
+}
+.booking-form .triple .children img {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin-left: 150px;
+  margin-top: 18px;
+}
+.booking-form .triple .children ::placeholder {
+  color: black;
+  font-size: 18px;
+  padding-left: 20px;
+  font-family: GillSans;
+}
+.booking-form .triple .children .childrenText {
+  font-size: 18px;
+  padding-right: 16px;
+  margin-top: 18px;
+}
+.booking-form .triple .children .childrenInput {
+  border: 1px solid #79ADDC;
+  background-color: transparent;
+  width: 103px;
+  height: 58px;
+}
+.booking-form .triple .rooms {
+  display: flex;
+}
+.booking-form .triple .rooms img {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin-left: 140px;
+  margin-top: 18px;
+}
+.booking-form .triple .rooms ::placeholder {
+  color: black;
+  font-size: 18px;
+  padding-left: 20px;
+  font-family: GillSans;
+}
+.booking-form .triple .rooms .roomsText {
+  font-size: 18px;
+  padding-right: 16px;
+  margin-top: 18px;
+}
+.booking-form .triple .rooms .roomsInput {
+  border: 1px solid #79ADDC;
+  background-color: transparent;
+  width: 103px;
+  height: 58px;
+}
+.booking-form .message ::placeholder {
+  color: black;
+  font-size: 18px;
+  padding-left: 20px;
+  font-family: GillSans;
+}
+.booking-form .message .messageInput {
+  border: 1px solid #79ADDC;
+  background-color: transparent;
+  width: 818px;
+  height: 192px;
+  padding-bottom: 140px;
+}
+.booking-form .submit {
+  width: 813px;
+  height: 60px;
+  border-radius: 50px;
+  font-size: 15px;
+  background-color: #79ADDC;
+  color: white;
+  border-style: none;
+  margin-top: 50px;
+  cursor: pointer;
+  font-family: GillSans;
+}
+
+@media only screen and (max-width: 1060px) {
+  .booking-form {
+    width: 236px;
+  }
+  .booking-form .form {
+    margin-left: 0px;
+  }
+  .booking-form h1 {
+    text-align: center;
+  }
+  .booking-form .first-inputs {
+    flex-direction: column;
+  }
+  .booking-form .inputname {
+    width: 276px;
+    margin-bottom: 10px;
+  }
+  .booking-form .inputemail {
+    width: 276px;
+    margin-left: 0px;
+  }
+  .booking-form .check .checkInput {
+    width: 200px;
+  }
+  .booking-form .checkout .checkoutInput {
+    width: 200px;
+    margin-left: 9px;
+  }
+  .booking-form .triple {
+    flex-direction: column;
+    width: 200px;
+  }
+  .booking-form .triple .adult img {
+    margin-left: 150px;
+  }
+  .booking-form .triple .adult .adultInput {
+    width: 103px;
+    margin-left: 23px;
+    margin-bottom: 10px;
+  }
+  .booking-form .triple .children img {
+    margin-left: 150px;
+  }
+  .booking-form .triple .children .childrenInput {
+    width: 103px;
+    margin-bottom: 10px;
+  }
+  .booking-form .triple .rooms img {
+    margin-left: 150px;
+  }
+  .booking-form .triple .rooms .roomsInput {
+    width: 103px;
+    margin-left: 11px;
+  }
+  .booking-form .message .messageInput {
+    width: 276px;
+  }
+  .booking-form .submit {
+    width: 276px;
+  }
+}
+nav {
+  max-width: 980px;
+  height: 60px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: #fff solid 2px;
+  font-family: GillSans;
+}
+nav .logo {
+  width: 92px;
+  height: 38px;
+  border-color: white;
+  border-style: solid;
+  border-width: 2px;
+}
+nav .logo p {
+  font-size: 20px;
+  color: white;
+  margin-top: 17px;
+  letter-spacing: 1.8px;
+}
+nav .links {
+  width: 542px;
+  height: 42px;
+  align-self: center;
+  display: flex;
+}
+nav a {
+  text-decoration: none;
+  color: #fff;
+  margin: auto;
+  font-size: 15px;
+}
+nav .line {
+  color: #79ADDC;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 1280px) {
+  nav {
+    padding-left: 10px;
+  }
+}
+@media only screen and (max-width: 655px) {
+  nav {
+    padding-left: 10px;
+  }
+  nav .logo {
+    width: 92px;
+    height: 42px;
+    border-color: white;
+    border-style: solid;
+    border-width: 2px;
+  }
+  nav .logo p {
+    font-size: 13px;
+    color: white;
+    margin-top: 19px;
+    letter-spacing: 1.8px;
+  }
+}
+.about {
+  max-width: 980px;
+  margin: 0 auto;
+  padding-top: 98px;
+}
+.about .about-top-section {
+  font-family: GillSans;
+  font-size: 16px;
+}
+.about .about-top-section h1 {
+  text-transform: uppercase;
+  border-bottom: 2px solid black;
+  display: inline-block;
+  padding-right: 30px;
+  font-size: 60px;
+  font-family: proxima-nova-condensed, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+.about .about-top-section p {
+  padding-top: 13px;
+}
+.about .about-bottom-secion {
+  margin-top: 120px;
+  padding-bottom: 117px;
+}
+.about .about-bottom-secion h3 {
+  text-transform: uppercase;
+  border-bottom: 2px solid black;
+  display: inline-block;
+  padding-right: 30px;
+  font-size: 40px;
+  font-family: proxima-nova-condensed, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+.about .about-bottom-secion .client {
+  padding-top: 14px;
+  max-width: 676px;
+  min-height: 150px;
+  margin-bottom: 16px;
+  display: flex;
+  font-family: GillSans;
+  font-style: italic;
+  font-size: 16px;
+}
+.about .about-bottom-secion .client .client-image1 {
+  width: 450px;
+  height: 150px;
+  background-image: url(../images/about-client-01.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.about .about-bottom-secion .client .client-image2 {
+  width: 450px;
+  height: 150px;
+  background-image: url(../images/about-client-02.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.about .about-bottom-secion .client .client-quote {
+  position: relative;
+  min-height: 50px;
+  width: 100%;
+  padding-left: 25px;
+}
+.about .about-bottom-secion .client .client-quote p:last-of-type {
+  margin-bottom: 25px;
+}
+.about .about-bottom-secion .client .client-quote .client-name {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: #79ADDC;
+  font-size: 20px;
+  font-family: proxima-nova-condensed, sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 980px) {
+  .about {
+    padding: 10px;
+    padding-top: 98px;
+  }
+}
+.navabout {
+  max-width: 980px;
+  height: 60px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: black solid 2px;
+  font-family: GillSans;
+  margin-top: 27px;
+}
+.navabout .logoabout {
+  width: 92px;
+  height: 38px;
+  border-color: black;
+  border-style: solid;
+  border-width: 2px;
+}
+.navabout .logoabout p {
+  font-size: 20px;
+  color: black;
+  margin-top: 17px;
+  letter-spacing: 1.8px;
+}
+.navabout .linksabout {
+  width: 542px;
+  height: 42px;
+  align-self: center;
+  display: flex;
+}
+.navabout .linksabout a {
+  text-decoration: none;
+  color: black;
+  margin: auto;
+  font-size: 15px;
+}
+.navabout .linksabout .linea {
+  color: #79ADDC;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 1280px) {
+  .navabout {
+    padding-left: 10px;
+  }
+}
+@media only screen and (max-width: 655px) {
+  .navabout {
+    padding-left: 10px;
+  }
+  .navabout .logoabout {
+    width: 92px;
+    height: 42px;
+    border-style: solid;
+    border-width: 2px;
+  }
+  .navabout .logoabout p {
+    font-size: 13px;
+    margin-top: 19px;
+    letter-spacing: 1.8px;
+  }
+}
+.tour {
+  padding-top: 50px;
+  padding-bottom: 100px;
+  font-family: proxima-nova-condensed, sans-serif;
+}
+.tour header {
+  max-width: 981px;
+  margin: 0 auto;
+  height: 200px;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tours-header.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tour header span {
+  color: white;
+  font-size: 60px;
+  font-family: Proxima;
+  text-transform: uppercase;
+}
+.tour .tours {
+  max-width: 818px;
+  margin: 48px auto 0 auto;
+  max-width: 818px;
+  min-height: 200px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.tour .tours a {
+  text-decoration: none;
+  color: white;
+}
+.tour .tours .tourPromo {
+  width: 236px;
+  height: 304px;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour-01.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 55px;
+  text-align: center;
+  padding-top: 30px;
+  color: white;
+  font-family: Proxima;
+}
+.tour .tours .tourPromo .place {
+  font-size: 60px;
+}
+.tour .tours .tourPromo .price {
+  font-size: 30px;
+  margin-top: -20px;
+  padding-bottom: 50px;
+}
+.tour .tours .tourPromo .promoBtn {
+  padding: 10px 30px;
+  border-radius: 15px;
+  background-color: #79addc;
+  cursor: pointer;
+}
+.tour .tours .tourPromo2 {
+  width: 236px;
+  height: 304px;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour-02.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 55px;
+  text-align: center;
+  padding-top: 30px;
+  color: white;
+  font-family: Proxima;
+}
+.tour .tours .tourPromo2 .place {
+  font-size: 60px;
+}
+.tour .tours .tourPromo2 .price {
+  font-size: 30px;
+  margin-top: -20px;
+  padding-bottom: 50px;
+}
+.tour .tours .tourPromo2 .promoBtn {
+  padding: 10px 30px;
+  border-radius: 15px;
+  background-color: #79addc;
+  cursor: pointer;
+}
+.tour .tours .tourPromo3 {
+  width: 236px;
+  height: 304px;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour-03.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 55px;
+  text-align: center;
+  padding-top: 30px;
+  color: white;
+  font-family: Proxima;
+}
+.tour .tours .tourPromo3 .place {
+  font-size: 60px;
+}
+.tour .tours .tourPromo3 .price {
+  font-size: 30px;
+  margin-top: -20px;
+  padding-bottom: 50px;
+}
+.tour .tours .tourPromo3 .promoBtn {
+  padding: 10px 30px;
+  border-radius: 15px;
+  background-color: #79addc;
+  cursor: pointer;
+}
+.tour .tours .tourPromo4 {
+  width: 236px;
+  height: 304px;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour-04.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 55px;
+  text-align: center;
+  padding-top: 30px;
+  color: white;
+  font-family: Proxima;
+}
+.tour .tours .tourPromo4 .place {
+  font-size: 60px;
+}
+.tour .tours .tourPromo4 .price {
+  font-size: 30px;
+  margin-top: -20px;
+  padding-bottom: 50px;
+}
+.tour .tours .tourPromo4 .promoBtn {
+  padding: 10px 30px;
+  border-radius: 15px;
+  background-color: #79addc;
+  cursor: pointer;
+}
+.tour .tours .tourPromo5 {
+  width: 236px;
+  height: 304px;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour-05.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 55px;
+  text-align: center;
+  padding-top: 30px;
+  color: white;
+  font-family: Proxima;
+}
+.tour .tours .tourPromo5 .place {
+  font-size: 60px;
+}
+.tour .tours .tourPromo5 .price {
+  font-size: 30px;
+  margin-top: -20px;
+  padding-bottom: 50px;
+}
+.tour .tours .tourPromo5 .promoBtn {
+  padding: 10px 30px;
+  border-radius: 15px;
+  background-color: #79addc;
+  cursor: pointer;
+}
+.tour .tours .tourPromo6 {
+  width: 236px;
+  height: 304px;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour-06.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 55px;
+  text-align: center;
+  padding-top: 30px;
+  color: white;
+  font-family: Proxima;
+}
+.tour .tours .tourPromo6 .place {
+  font-size: 60px;
+}
+.tour .tours .tourPromo6 .price {
+  font-size: 30px;
+  margin-top: -20px;
+  padding-bottom: 50px;
+}
+.tour .tours .tourPromo6 .promoBtn {
+  padding: 10px 30px;
+  border-radius: 15px;
+  background-color: #79addc;
+  cursor: pointer;
+}
+.tour .tours .tourPromo7 {
+  width: 236px;
+  height: 304px;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour-07.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 55px;
+  text-align: center;
+  padding-top: 30px;
+  color: white;
+  font-family: Proxima;
+}
+.tour .tours .tourPromo7 .place {
+  font-size: 60px;
+}
+.tour .tours .tourPromo7 .price {
+  font-size: 30px;
+  margin-top: -20px;
+  padding-bottom: 50px;
+}
+.tour .tours .tourPromo7 .promoBtn {
+  padding: 10px 30px;
+  border-radius: 15px;
+  background-color: #79addc;
+  cursor: pointer;
+}
+.tour .tours .tourPromo8 {
+  width: 236px;
+  height: 304px;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour-08.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 55px;
+  text-align: center;
+  padding-top: 30px;
+  color: white;
+  font-family: Proxima;
+}
+.tour .tours .tourPromo8 .place {
+  font-size: 60px;
+}
+.tour .tours .tourPromo8 .price {
+  font-size: 30px;
+  margin-top: -20px;
+  padding-bottom: 50px;
+}
+.tour .tours .tourPromo8 .promoBtn {
+  padding: 10px 30px;
+  border-radius: 15px;
+  background-color: #79addc;
+  cursor: pointer;
+}
+.tour .tours .tourPromo9 {
+  width: 236px;
+  height: 304px;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour-09.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 55px;
+  text-align: center;
+  padding-top: 30px;
+  color: white;
+  font-family: Proxima;
+}
+.tour .tours .tourPromo9 .place {
+  font-size: 60px;
+}
+.tour .tours .tourPromo9 .price {
+  font-size: 30px;
+  margin-top: -20px;
+  padding-bottom: 50px;
+}
+.tour .tours .tourPromo9 .promoBtn {
+  padding: 10px 30px;
+  border-radius: 15px;
+  background-color: #79addc;
+  cursor: pointer;
+}
+
+@media all and (max-width: 818px) {
+  .tour .tours {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.alltours {
+  margin-top: 50px;
+}
+.alltours .israel {
+  max-width: 981px;
+  height: 413px;
+  margin: 0 auto;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour-01.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 40px;
+  padding-top: 30px;
+  padding-left: 30px;
+}
+.alltours .israel .title {
+  color: white;
+  font-size: 80px;
+  font-family: ExtraCondense;
+}
+.alltours .israel .pricing {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  margin-top: 350px;
+  margin-left: 80px;
+  font-family: ExtraCondense;
+  text-transform: uppercase;
+}
+.alltours .threepics {
+  display: flex;
+  justify-content: space-between;
+  max-width: 981px;
+  margin: 0 auto;
+}
+.alltours .threepics .israelOne {
+  width: 298px;
+  height: 347px;
+  background-image: url(../images/israel-tour-01.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.alltours .threepics .israelTwo {
+  width: 298px;
+  height: 347px;
+  background-image: url(../images/israel-tour-02.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.alltours .threepics .israelThree {
+  width: 298px;
+  height: 347px;
+  background-image: url(../images/israel-tour-03.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.alltours .dayText {
+  font-size: 16px;
+  max-width: 981px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+.alltours .dayText h1 {
+  text-transform: uppercase;
+  border-bottom: 2px solid black;
+  display: inline-block;
+  padding-right: 30px;
+  font-size: 60px;
+  font-family: ExtraCondense;
+  font-weight: 200;
+  font-style: normal;
+}
+.alltours .dayText p {
+  font-family: GillSans;
+  padding-top: 13px;
+  padding-bottom: 100px;
+  font-size: 16px;
+}
+.alltours .toursBottomButton {
+  max-width: 133px;
+  height: 40px;
+  margin: 0 auto;
+  border-radius: 20px;
+  background-color: #79ADDC;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 100px;
+  font-size: 15px;
+  padding-top: 10px;
+  font-family: GillSans;
+}
+
+@media all and (max-width: 981px) {
+  .alltours .threepics {
+    flex-direction: column;
+    align-items: center;
+  }
+  .alltours .threepics .israelOne {
+    margin-bottom: 30px;
+  }
+  .alltours .threepics .israelTwo {
+    margin-bottom: 30px;
+  }
+  .alltours .threepics .israelThree {
+    margin-bottom: 30px;
+  }
+  .alltours .dayText {
+    padding: 20px;
+  }
+  .alltours .israel {
+    display: flex;
+    flex-direction: column;
+  }
+  .alltours .israel .pricing {
+    margin: 0;
+    margin-top: 350px;
+  }
+}
+.alltours {
+  margin-top: 50px;
+}
+.alltours .usa {
+  max-width: 981px;
+  height: 413px;
+  margin: 0 auto;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour-02.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 40px;
+  padding-top: 30px;
+  padding-left: 30px;
+}
+.alltours .usa .title {
+  color: white;
+  font-size: 80px;
+  font-family: ExtraCondense;
+}
+.alltours .usa .pricing {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  margin-top: 350px;
+  margin-left: 90px;
+  font-family: ExtraCondense;
+  text-transform: uppercase;
+}
+.alltours .threepics {
+  display: flex;
+  justify-content: space-between;
+  max-width: 981px;
+  margin: 0 auto;
+}
+.alltours .threepics .usaOne {
+  width: 298px;
+  height: 347px;
+  background-image: url(../images/usa-tour-01.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.alltours .threepics .usaTwo {
+  width: 298px;
+  height: 347px;
+  background-image: url(../images/usa-tour-02.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.alltours .threepics .usaThree {
+  width: 298px;
+  height: 347px;
+  background-image: url(../images/usa-tour-03.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.alltours .dayText {
+  font-size: 16px;
+  max-width: 981px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+.alltours .dayText h1 {
+  text-transform: uppercase;
+  border-bottom: 2px solid black;
+  display: inline-block;
+  padding-right: 30px;
+  font-size: 60px;
+  font-family: ExtraCondense;
+  font-weight: 200;
+  font-style: normal;
+}
+.alltours .dayText p {
+  font-family: GillSans;
+  padding-top: 13px;
+  font-size: 16px;
+}
+.alltours .toursBottomButton {
+  max-width: 133px;
+  height: 40px;
+  margin: 0 auto;
+  border-radius: 20px;
+  background-color: #79ADDC;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 100px;
+  font-size: 15px;
+  padding-top: 10px;
+  font-family: GillSans;
+}
+
+@media all and (max-width: 981px) {
+  .alltours .threepics {
+    flex-direction: column;
+    align-items: center;
+  }
+  .alltours .threepics .usaOne {
+    margin-bottom: 30px;
+  }
+  .alltours .threepics .usaTwo {
+    margin-bottom: 30px;
+  }
+  .alltours .threepics .usaThree {
+    margin-bottom: 30px;
+  }
+  .alltours .dayText {
+    padding: 20px;
+  }
+  .alltours .usa {
+    display: flex;
+    flex-direction: column;
+  }
+  .alltours .usa .pricing {
+    margin: 0;
+    margin-top: 350px;
+  }
+}
+.alltours {
+  margin-top: 50px;
+}
+.alltours .australia {
+  max-width: 981px;
+  height: 413px;
+  margin: 0 auto;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour-03.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 40px;
+  padding-top: 30px;
+  padding-left: 30px;
+}
+.alltours .australia .title {
+  color: white;
+  font-size: 80px;
+  font-family: ExtraCondense;
+}
+.alltours .australia .pricing {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  margin-top: 350px;
+  margin-left: -1px;
+  font-family: ExtraCondense;
+  text-transform: uppercase;
+}
+.alltours .threepics {
+  display: flex;
+  justify-content: space-between;
+  max-width: 981px;
+  margin: 0 auto;
+}
+.alltours .threepics .ausOne {
+  width: 298px;
+  height: 347px;
+  background-image: url(../images/aus-tour-01.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.alltours .threepics .ausTwo {
+  width: 298px;
+  height: 347px;
+  background-image: url(../images/aus-tour-02.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.alltours .threepics .ausThree {
+  width: 298px;
+  height: 347px;
+  background-image: url(../images/aus-tour-03.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.alltours .dayText {
+  font-size: 16px;
+  max-width: 981px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+.alltours .dayText h1 {
+  text-transform: uppercase;
+  border-bottom: 2px solid black;
+  display: inline-block;
+  padding-right: 30px;
+  font-size: 60px;
+  font-family: ExtraCondense;
+  font-weight: 200;
+  font-style: normal;
+}
+.alltours .dayText p {
+  font-family: GillSans;
+  padding-top: 13px;
+  padding-bottom: 100px;
+  font-size: 16px;
+}
+.alltours .toursBottomButton {
+  max-width: 133px;
+  height: 40px;
+  margin: 0 auto;
+  border-radius: 20px;
+  background-color: #79ADDC;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 100px;
+  font-size: 15px;
+  padding-top: 10px;
+  font-family: GillSans;
+}
+
+@media all and (max-width: 981px) {
+  .alltours .threepics {
+    flex-direction: column;
+    align-items: center;
+  }
+  .alltours .threepics .ausOne {
+    margin-bottom: 30px;
+  }
+  .alltours .threepics .ausTwo {
+    margin-bottom: 30px;
+  }
+  .alltours .threepics .ausThree {
+    margin-bottom: 30px;
+  }
+  .alltours .dayText {
+    padding: 20px;
+  }
+  .alltours .australia {
+    display: flex;
+    flex-direction: column;
+  }
+  .alltours .australia .pricing {
+    margin: 0;
+    margin-top: 350px;
+  }
+}
+.alltours {
+  margin-top: 50px;
+}
+.alltours .newzealand {
+  max-width: 981px;
+  height: 413px;
+  margin: 0 auto;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour-04.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 40px;
+  padding-top: 30px;
+  padding-left: 30px;
+}
+.alltours .newzealand .title {
+  color: white;
+  font-size: 80px;
+  font-family: ExtraCondense;
+}
+.alltours .newzealand .pricing {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  margin-top: 350px;
+  font-family: ExtraCondense;
+  margin-left: -100px;
+  text-transform: uppercase;
+}
+.alltours .threepics {
+  display: flex;
+  justify-content: space-between;
+  max-width: 981px;
+  margin: 0 auto;
+}
+.alltours .threepics .nzOne {
+  width: 298px;
+  height: 347px;
+  background-image: url(../images/nz-tour-01.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.alltours .threepics .nzTwo {
+  width: 298px;
+  height: 347px;
+  background-image: url(../images/nz-tour-02.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.alltours .threepics .nzThree {
+  width: 298px;
+  height: 347px;
+  background-image: url(../images/nz-tour-03.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.alltours .dayText {
+  font-size: 16px;
+  max-width: 981px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+.alltours .dayText h1 {
+  text-transform: uppercase;
+  border-bottom: 2px solid black;
+  display: inline-block;
+  padding-right: 30px;
+  font-size: 60px;
+  font-family: ExtraCondense;
+  font-weight: 200;
+  font-style: normal;
+}
+.alltours .dayText p {
+  font-family: GillSans;
+  padding-top: 13px;
+  padding-bottom: 100px;
+  font-size: 16px;
+}
+.alltours .toursBottomButton {
+  max-width: 133px;
+  height: 40px;
+  margin: 0 auto;
+  border-radius: 20px;
+  background-color: #79ADDC;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 100px;
+  font-size: 15px;
+  padding-top: 10px;
+  font-family: GillSans;
+}
+
+@media all and (max-width: 981px) {
+  .alltours .threepics {
+    flex-direction: column;
+    align-items: center;
+  }
+  .alltours .threepics .nzOne {
+    margin-bottom: 30px;
+  }
+  .alltours .threepics .nzTwo {
+    margin-bottom: 30px;
+  }
+  .alltours .threepics .nzThree {
+    margin-bottom: 30px;
+  }
+  .alltours .dayText {
+    padding: 20px;
+  }
+  .alltours .newzealand {
+    display: flex;
+    flex-direction: column;
+  }
+  .alltours .newzealand .pricing {
+    margin: 0;
+    margin-top: 350px;
+  }
+}
+.alltours {
+  margin-top: 50px;
+}
+.alltours .france {
+  max-width: 981px;
+  height: 413px;
+  margin: 0 auto;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour-05.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 40px;
+  padding-top: 30px;
+  padding-left: 30px;
+}
+.alltours .france .title {
+  color: white;
+  font-size: 80px;
+  font-family: ExtraCondense;
+}
+.alltours .france .pricing {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  margin-top: 350px;
+  padding-left: 50px;
+  font-family: ExtraCondense;
+  text-transform: uppercase;
+}
+.alltours .threepics {
+  display: flex;
+  justify-content: space-between;
+  max-width: 981px;
+  margin: 0 auto;
+}
+.alltours .threepics .franceOne {
+  width: 298px;
+  height: 347px;
+  background-image: url(../images/france-tour-01.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.alltours .threepics .franceTwo {
+  width: 298px;
+  height: 347px;
+  background-image: url(../images/france-tour-02.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.alltours .threepics .franceThree {
+  width: 298px;
+  height: 347px;
+  background-image: url(../images/france-tour-03.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.alltours .dayText {
+  font-size: 16px;
+  max-width: 981px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+.alltours .dayText h1 {
+  text-transform: uppercase;
+  border-bottom: 2px solid black;
+  display: inline-block;
+  padding-right: 30px;
+  font-size: 60px;
+  font-family: ExtraCondense;
+  font-weight: 200;
+  font-style: normal;
+}
+.alltours .dayText p {
+  font-family: GillSans;
+  padding-top: 13px;
+  padding-bottom: 100px;
+  font-size: 16px;
+}
+.alltours .toursBottomButton {
+  max-width: 133px;
+  height: 40px;
+  margin: 0 auto;
+  border-radius: 20px;
+  background-color: #79ADDC;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 100px;
+  font-size: 15px;
+  padding-top: 10px;
+  font-family: GillSans;
+}
+
+@media all and (max-width: 981px) {
+  .alltours .threepics {
+    flex-direction: column;
+    align-items: center;
+  }
+  .alltours .threepics .franceOne {
+    margin-bottom: 30px;
+  }
+  .alltours .threepics .franceTwo {
+    margin-bottom: 30px;
+  }
+  .alltours .threepics .franceThree {
+    margin-bottom: 30px;
+  }
+  .alltours .dayText {
+    padding: 20px;
+  }
+  .alltours .france {
+    display: flex;
+    flex-direction: column;
+  }
+  .alltours .france .pricing {
+    margin: 0;
+    margin-top: 350px;
+  }
+}
+.alltours {
+  margin-top: 50px;
+}
+.alltours .egypt {
+  max-width: 981px;
+  height: 413px;
+  margin: 0 auto;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour-06.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 40px;
+  padding-top: 30px;
+  padding-left: 30px;
+}
+.alltours .egypt .title {
+  color: white;
+  font-size: 80px;
+  font-family: ExtraCondense;
+}
+.alltours .egypt .pricing {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  margin-top: 350px;
+  margin-left: 93px;
+  font-family: ExtraCondense;
+  text-transform: uppercase;
+}
+.alltours .threepics {
+  display: flex;
+  justify-content: space-between;
+  max-width: 981px;
+  margin: 0 auto;
+}
+.alltours .threepics .egyptOne {
+  width: 298px;
+  height: 347px;
+  background-image: url(../images/egypt-tour-01.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.alltours .threepics .egyptTwo {
+  width: 298px;
+  height: 347px;
+  background-image: url(../images/egypt-tour-02.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.alltours .threepics .egyptThree {
+  width: 298px;
+  height: 347px;
+  background-image: url(../images/egypt-tour-03.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.alltours .dayText {
+  font-size: 16px;
+  max-width: 981px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+.alltours .dayText h1 {
+  text-transform: uppercase;
+  border-bottom: 2px solid black;
+  display: inline-block;
+  padding-right: 30px;
+  font-size: 60px;
+  font-family: ExtraCondense;
+  font-weight: 200;
+  font-style: normal;
+}
+.alltours .dayText p {
+  font-family: GillSans;
+  padding-top: 13px;
+  padding-bottom: 100px;
+  font-size: 16px;
+}
+.alltours .toursBottomButton {
+  max-width: 133px;
+  height: 40px;
+  margin: 0 auto;
+  border-radius: 20px;
+  background-color: #79ADDC;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 100px;
+  font-size: 15px;
+  padding-top: 10px;
+  font-family: GillSans;
+}
+
+@media all and (max-width: 981px) {
+  .alltours .threepics {
+    flex-direction: column;
+    align-items: center;
+  }
+  .alltours .threepics .egyptOne {
+    margin-bottom: 30px;
+  }
+  .alltours .threepics .egyptTwo {
+    margin-bottom: 30px;
+  }
+  .alltours .threepics .egyptThree {
+    margin-bottom: 30px;
+  }
+  .alltours .dayText {
+    padding: 20px;
+  }
+  .alltours .egypt {
+    display: flex;
+    flex-direction: column;
+  }
+  .alltours .egypt .pricing {
+    margin: 0;
+    margin-top: 350px;
+  }
+}
+.alltours {
+  margin-top: 50px;
+}
+.alltours .japan {
+  max-width: 981px;
+  height: 413px;
+  margin: 0 auto;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour-07.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 40px;
+  padding-top: 30px;
+  padding-left: 30px;
+}
+.alltours .japan .title {
+  color: white;
+  font-size: 80px;
+  font-family: ExtraCondense;
+}
+.alltours .japan .pricing {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  margin-top: 350px;
+  margin-left: 70px;
+  font-family: ExtraCondense;
+  text-transform: uppercase;
+}
+.alltours .threepics {
+  display: flex;
+  justify-content: space-between;
+  max-width: 981px;
+  margin: 0 auto;
+}
+.alltours .threepics .japanOne {
+  width: 298px;
+  height: 347px;
+  background-image: url(../images/japan-tour-01.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.alltours .threepics .japanTwo {
+  width: 298px;
+  height: 347px;
+  background-image: url(../images/japan-tour-02.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.alltours .threepics .japanThree {
+  width: 298px;
+  height: 347px;
+  background-image: url(../images/japan-tour-03.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.alltours .dayText {
+  font-size: 16px;
+  max-width: 981px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+.alltours .dayText h1 {
+  text-transform: uppercase;
+  border-bottom: 2px solid black;
+  display: inline-block;
+  padding-right: 30px;
+  font-size: 60px;
+  font-family: ExtraCondense;
+  font-weight: 200;
+  font-style: normal;
+}
+.alltours .dayText p {
+  font-family: GillSans;
+  padding-top: 13px;
+  padding-bottom: 100px;
+  font-size: 16px;
+}
+.alltours .toursBottomButton {
+  max-width: 133px;
+  height: 40px;
+  margin: 0 auto;
+  border-radius: 20px;
+  background-color: #79ADDC;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 100px;
+  font-size: 15px;
+  padding-top: 10px;
+  font-family: GillSans;
+}
+
+@media all and (max-width: 981px) {
+  .alltours .threepics {
+    flex-direction: column;
+    align-items: center;
+  }
+  .alltours .threepics .japanOne {
+    margin-bottom: 30px;
+  }
+  .alltours .threepics .japanTwo {
+    margin-bottom: 30px;
+  }
+  .alltours .threepics .japanThree {
+    margin-bottom: 30px;
+  }
+  .alltours .dayText {
+    padding: 20px;
+  }
+  .alltours .japan {
+    display: flex;
+    flex-direction: column;
+  }
+  .alltours .japan .pricing {
+    margin: 0;
+    margin-top: 350px;
+  }
+}
+.alltours {
+  margin-top: 50px;
+}
+.alltours .canada {
+  max-width: 981px;
+  height: 413px;
+  margin: 0 auto;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour-08.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 40px;
+  padding-top: 30px;
+  padding-left: 30px;
+}
+.alltours .canada .title {
+  color: white;
+  font-size: 80px;
+  font-family: ExtraCondense;
+}
+.alltours .canada .pricing {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  margin-top: 350px;
+  margin-left: 30px;
+  font-family: ExtraCondense;
+  text-transform: uppercase;
+}
+.alltours .threepics {
+  display: flex;
+  justify-content: space-between;
+  max-width: 981px;
+  margin: 0 auto;
+}
+.alltours .threepics .canadaOne {
+  width: 298px;
+  height: 347px;
+  background-image: url(../images/canada-tour-01.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.alltours .threepics .canadaTwo {
+  width: 298px;
+  height: 347px;
+  background-image: url(../images/canada-tour-02.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.alltours .threepics .canadaThree {
+  width: 298px;
+  height: 347px;
+  background-image: url(../images/canada-tour-03.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.alltours .dayText {
+  font-size: 16px;
+  max-width: 981px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+.alltours .dayText h1 {
+  text-transform: uppercase;
+  border-bottom: 2px solid black;
+  display: inline-block;
+  padding-right: 30px;
+  font-size: 60px;
+  font-family: ExtraCondense;
+  font-weight: 200;
+  font-style: normal;
+}
+.alltours .dayText p {
+  font-family: GillSans;
+  padding-top: 13px;
+  padding-bottom: 100px;
+  font-size: 16px;
+}
+.alltours .toursBottomButton {
+  max-width: 133px;
+  height: 40px;
+  margin: 0 auto;
+  border-radius: 20px;
+  background-color: #79ADDC;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 100px;
+  font-size: 15px;
+  padding-top: 10px;
+  font-family: GillSans;
+}
+
+@media all and (max-width: 981px) {
+  .alltours .threepics {
+    flex-direction: column;
+    align-items: center;
+  }
+  .alltours .threepics .canadaOne {
+    margin-bottom: 30px;
+  }
+  .alltours .threepics .canadaTwo {
+    margin-bottom: 30px;
+  }
+  .alltours .threepics .canadaThree {
+    margin-bottom: 30px;
+  }
+  .alltours .dayText {
+    padding: 20px;
+  }
+  .alltours .canada {
+    display: flex;
+    flex-direction: column;
+  }
+  .alltours .canada .pricing {
+    margin: 0;
+    margin-top: 350px;
+  }
+}
+.alltours {
+  margin-top: 50px;
+}
+.alltours .uae {
+  max-width: 981px;
+  height: 413px;
+  margin: 0 auto;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour-09.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 40px;
+  padding-top: 30px;
+  padding-left: 30px;
+}
+.alltours .uae .title {
+  color: white;
+  font-size: 80px;
+  font-family: ExtraCondense;
+}
+.alltours .uae .pricing {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  margin-top: 350px;
+  margin-left: 90px;
+  font-family: ExtraCondense;
+  text-transform: uppercase;
+}
+.alltours .threepics {
+  display: flex;
+  justify-content: space-between;
+  max-width: 981px;
+  margin: 0 auto;
+}
+.alltours .threepics .uaeOne {
+  width: 298px;
+  height: 347px;
+  background-image: url(../images/uae-tour-01.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.alltours .threepics .uaeTwo {
+  width: 298px;
+  height: 347px;
+  background-image: url(../images/uae-tour-02.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.alltours .threepics .uaeThree {
+  width: 298px;
+  height: 347px;
+  background-image: url(../images/uae-tour-03.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.alltours .dayText {
+  font-size: 16px;
+  max-width: 981px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+.alltours .dayText h1 {
+  text-transform: uppercase;
+  border-bottom: 2px solid black;
+  display: inline-block;
+  padding-right: 30px;
+  font-size: 60px;
+  font-family: ExtraCondense;
+  font-weight: 200;
+  font-style: normal;
+}
+.alltours .dayText p {
+  font-family: GillSans;
+  padding-top: 13px;
+  padding-bottom: 100px;
+  font-size: 16px;
+}
+.alltours .toursBottomButton {
+  max-width: 133px;
+  height: 40px;
+  margin: 0 auto;
+  border-radius: 20px;
+  background-color: #79ADDC;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 100px;
+  font-size: 15px;
+  padding-top: 10px;
+  font-family: GillSans;
+}
+
+@media all and (max-width: 981px) {
+  .alltours .threepics {
+    flex-direction: column;
+    align-items: center;
+  }
+  .alltours .threepics .uaeOne {
+    margin-bottom: 30px;
+  }
+  .alltours .threepics .uaeTwo {
+    margin-bottom: 30px;
+  }
+  .alltours .threepics .uaeThree {
+    margin-bottom: 30px;
+  }
+  .alltours .dayText {
+    padding: 20px;
+  }
+  .alltours .uae {
+    display: flex;
+    flex-direction: column;
+  }
+  .alltours .uae .pricing {
+    margin: 0;
+    margin-top: 350px;
+  }
+}
+.special {
+  max-width: 980px;
+  margin: 0 auto;
+  padding-top: 98px;
+}
+.special h1 {
+  text-transform: uppercase;
+  border-bottom: 2px solid black;
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 200;
+  font-family: ExtraCondense;
+}
+.special .topSpecial {
+  display: flex;
+  padding-bottom: 60px;
+  padding-top: 35px;
+}
+.special .topSpecial .image {
+  width: 199px;
+  height: 287px;
+  background-image: url(../images/special-offer-01.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.special .topSpecial .info {
+  width: 290px;
+  height: 287px;
+  padding-left: 20px;
+}
+.special .topSpecial .info .price {
+  position: absolute;
+  margin-left: 190px;
+  margin-top: -43px;
+  color: #FF7D38;
+  font-family: ExtraCondense;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.special .topSpecial .info .text {
+  font-size: 16px;
+  font-family: GillSans;
+  padding-bottom: 70px;
+}
+.special .topSpecial .info .learnbtn {
+  width: 133px;
+  height: 40px;
+  border-radius: 30px;
+  background-color: #79ADDC;
+  color: white;
+  cursor: pointer;
+  border: none;
+  font-family: GillSans;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.special .topSpecial2 {
+  display: flex;
+  padding-bottom: 100px;
+}
+.special .topSpecial2 .image2 {
+  width: 199px;
+  height: 287px;
+  background-image: url(../images/special-offer-02.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.special .topSpecial2 .info {
+  width: 290px;
+  height: 287px;
+  padding-left: 20px;
+}
+.special .topSpecial2 .info .price {
+  position: absolute;
+  margin-left: 205px;
+  margin-top: -43px;
+  color: #FF7D38;
+  font-family: ExtraCondense;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.special .topSpecial2 .info .text {
+  font-size: 16px;
+  font-family: GillSans;
+  padding-bottom: 70px;
+}
+.special .topSpecial2 .info .learnbtn {
+  width: 133px;
+  height: 40px;
+  border-radius: 30px;
+  background-color: #79ADDC;
+  color: white;
+  cursor: pointer;
+  border: none;
+  font-family: GillSans;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 980px) {
+  .special {
+    padding: 10px;
+    margin-top: 100px;
+  }
+  .special .topSpecial2 .info .price {
+    margin-left: 200px;
+  }
+  .special .topSpecial .info .price {
+    margin-left: 180px;
+  }
+}
+.blog {
+  max-width: 980px;
+  margin: 0 auto;
+  padding-top: 98px;
+}
+.blog h1 {
+  text-transform: uppercase;
+  border-bottom: 2px solid black;
+  display: inline-block;
+  padding-right: 30px;
+  font-size: 30px;
+  font-weight: 200;
+  font-family: ExtraCondense;
+}
+.blog .blogPost {
+  display: flex;
+  padding-top: 20px;
+}
+.blog .blogPost .date {
+  width: 60px;
+  height: 60px;
+  background-color: #79ADDC;
+  margin-right: 20px;
+}
+.blog .blogPost .date .dateText {
+  color: white;
+  font-size: 22px;
+  font-family: GillSans;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 10px;
+}
+.blog .blogPost .date .dateText .month {
+  font-size: 12px;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+.blog .blogPost .picture {
+  width: 900px;
+  height: 259px;
+  background-image: url(../images/blog.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.blog .blogText {
+  width: 380px;
+  margin-left: 80px;
+  padding-top: 20px;
+}
+.blog .blogText .blackTxt {
+  font-size: 15px;
+  font-family: GillSans;
+}
+.blog .blogText .blueTxt {
+  color: #79ADDC;
+  font-size: 13px;
+}
+.blog .blogText .blueTxt2 {
+  color: #79ADDC;
+  font-size: 13px;
+  padding-bottom: 120px;
+}
+
+@media only screen and (max-width: 1060px) {
+  .blog {
+    padding: 20px;
+    margin-top: 100px;
+  }
+  .blog .blogText {
+    margin-left: 45px;
+  }
+}
+.contact {
+  max-width: 980px;
+  margin: 0 auto;
+  padding-top: 98px;
+}
+.contact h1 {
+  text-transform: uppercase;
+  border-bottom: 2px solid black;
+  display: inline-block;
+  padding-right: 30px;
+  font-size: 30px;
+  font-weight: 200;
+  font-family: ExtraCondense;
+}
+.contact .fullSide {
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 100px;
+}
+.contact .fullSide .leftSide .map {
+  width: 400px;
+  height: 442px;
+  background-image: url(../images/mapp.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contact .fullSide .leftSide .contactInfo {
+  font-size: 18px;
+  font-family: GillSans;
+  padding-top: 20px;
+}
+.contact .fullSide .rightSide {
+  padding-left: 51px;
+}
+.contact .fullSide .rightSide .input {
+  border: none;
+  background-color: #F5F5F5;
+  width: 529px;
+  height: 60px;
+  margin-bottom: 21px;
+}
+.contact .fullSide .rightSide ::placeholder {
+  font-family: GillSans;
+  font-size: 16px;
+  padding-left: 20px;
+  position: absolute;
+  padding-top: 20px;
+}
+.contact .fullSide .rightSide .inputMes {
+  border: none;
+  background-color: #F5F5F5;
+  width: 529px;
+  height: 199px;
+  margin-bottom: 20px;
+}
+.contact .fullSide .rightSide .messageBtn {
+  width: 168px;
+  height: 60px;
+  background-color: #79ADDC;
+  color: white;
+  cursor: pointer;
+  border: none;
+  font-family: GillSans;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 1060px) {
+  .contact {
+    padding: 10px;
+    text-align: center;
+    margin-top: 100px;
+  }
+  .contact .fullSide {
+    flex-direction: column;
+  }
+  .contact .fullSide .leftSide .map {
+    margin: 0 auto;
+  }
+  .contact .fullSide .rightSide {
+    padding-left: 0;
+  }
+  .contact .fullSide .rightSide .input {
+    width: 400px;
+  }
+  .contact .fullSide .rightSide .inputMes {
+    width: 400px;
+  }
+}

@@ -1,0 +1,119 @@
+.contact {
+    max-width: 980px;
+    margin: 0 auto;
+    padding-top: 98px;
+
+    h1 {
+        //font-family: ExtraCondense;
+        text-transform: uppercase;
+        border-bottom: 2px solid black;
+        display: inline-block;
+        padding-right: 30px;
+        font-size: 30px;
+        //font-family: proxima-nova-condensed, sans-serif;
+        font-weight: 200;
+        font-family: ExtraCondense;
+        
+}
+    .fullSide {
+        display: flex;
+        padding-top: 30px;
+        padding-bottom: 100px;
+
+        .leftSide {
+
+
+            .map {
+                width: 400px;
+                height: 442px;
+                background-image: url(../images/mapp.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            .contactInfo {
+                font-size: 18px;
+                font-family: GillSans;
+                padding-top: 20px;
+                
+            }
+        }
+
+        .rightSide {
+            padding-left: 51px;
+            .input {
+                border: none;
+                background-color: #F5F5F5;
+                width: 529px;
+                height: 60px;
+                margin-bottom: 21px;
+            
+            }
+
+            ::placeholder {
+                font-family: GillSans;
+                font-size: 16px;
+                padding-left: 20px;
+                position: absolute;
+                padding-top: 20px;
+            }
+
+
+            .inputMes {
+                border: none;
+                background-color: #F5F5F5;
+                width: 529px;
+                height: 199px;
+                margin-bottom: 20px;
+
+            
+            }
+
+            .messageBtn {
+                width: 168px;
+                height: 60px;
+                background-color: $site-blue;
+                color: white;
+                cursor: pointer;
+                border: none;
+                font-family: GillSans;
+                font-size: 15px;
+                text-transform: uppercase;
+                
+            }
+        }
+    }
+
+    
+}
+
+@media only screen and (max-width: 1060px) {
+    .contact {
+        padding: 10px;
+        text-align: center;
+        margin-top: 100px;
+        .fullSide {
+            flex-direction: column;
+
+            .leftSide {
+                .map {
+                   margin: 0 auto;
+                }
+            }
+          
+            
+            .rightSide {
+                padding-left: 0;
+                .input {
+                    width: 400px;
+                }
+
+                .inputMes {
+                    width: 400px;
+                }
+     
+            }
+        }
+    }
+}
