@@ -1,50 +1,50 @@
-nav {
-    max-width: 980px;
-    height: 60px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    border-bottom: $site-white solid 2px;
-    font-family: GillSans;
+// nav {
+//     max-width: 980px;
+//     height: 60px;
+//     margin: 0 auto;
+//     display: flex;
+//     justify-content: space-between;
+//     border-bottom: $site-white solid 2px;
+//     font-family: GillSans;
     
     
 
-    .logo {
-        width: 92px;
-        height: 38px;
-        border-color: white;
-        border-style: solid;
-        border-width: 2px;
+//     .logo {
+//         width: 92px;
+//         height: 38px;
+//         border-color: white;
+//         border-style: solid;
+//         border-width: 2px;
         
         
 
-        p {
-            font-size: 20px;
-            color: white;
-            margin-top: 17px;
-            letter-spacing: 1.8px;
+//         p {
+//             font-size: 20px;
+//             color: white;
+//             margin-top: 17px;
+//             letter-spacing: 1.8px;
             
            
-        }
-    }
+//         }
+//     }
 
 
-    .links {
-        width: 542px;
-        height: 42px;
-        align-self: center;
-        display: flex;
+//     .links {
+//         width: 542px;
+//         height: 42px;
+//         align-self: center;
+//         display: flex;
         
-    }
+//     }
 
-    a {
-        text-decoration: none;
-        color: $site-white;
-        margin: auto;
-        font-size: 15px;
+//     a {
+//         text-decoration: none;
+//         color: $site-white;
+//         margin: auto;
+//         font-size: 15px;
         
 
-    }
+//     }
 
     .line {
         color: $site-blue;
@@ -52,21 +52,17 @@ nav {
     }
 
 
-}
+// }
 
-@media only screen and (max-width: 1280px) {
-    nav {
-       padding-left: 10px;
 
-    }
-  }
 
 @media only screen and (max-width: 655px) {
-    nav {
-       padding-left: 10px;
+    .homeNav {
+       
+       margin-left: 0px;
+        padding: 10px;
 
-
-       .logo {
+       .logoabout {
         width: 92px;
         height: 42px;
         border-color: white;

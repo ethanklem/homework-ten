@@ -13,12 +13,23 @@ function init() {
        let contentID = btnID + "Content";
     
       if (btnID == "home") {
-          $(".nav").removeClass("navabout").addClass("nav")
+        //   $("nav").removeClass("navabout").addClass(".homenav");
+            $("nav").css("position", "absolute");
+            $("nav").removeClass("navabout").removeClass("nav").addClass("homeNav")
+
+
+      } else {
+        $("nav").css("position", "relative");
+          $("nav").addClass("navabout").removeClass("homeNav")
       }
+
+      
+
+     
 
 
        MODEL.getPageContent(contentID, addPromoListeners);
-      console.log('clicked')
+      console.log(btnID)
 
       
 
@@ -27,7 +38,7 @@ function init() {
 }
 
 function addPromoListeners() {
-console.log("page is loaded")
+
 
 $(".promo-tours a").click(function(e) {
     let btnID = this.id;
@@ -35,7 +46,12 @@ $(".promo-tours a").click(function(e) {
 
     MODEL.getPageContent(contentID);
     
-    console.log('clicked promo')
+    console.log(btnID)
+
+    if (btnID == "israel", "usa", "australia") {
+        $("nav").removeClass("homeNav").addClass("navabout")
+      $("nav").css("position", "relative");
+    }
 });
 
 $(".tour a").click(function(e) {
@@ -44,8 +60,10 @@ $(".tour a").click(function(e) {
 
     MODEL.getPageContent(contentID);
     
-    console.log('clicked promo')
+    console.log(btnID)
 });
+
+
 
 }
 

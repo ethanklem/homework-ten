@@ -35,21 +35,65 @@ p {
   font-family: ExtraCondense;
   src: url(fonts/FontsFree-Net-Proxima-Nova-ExCn-Reg.otf);
 }
+.homeNav {
+  max-width: 980px;
+  height: 60px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: white solid 2px;
+  font-family: GillSans;
+  margin-top: 27px;
+  width: 100%;
+  position: absolute;
+  margin-left: 430px;
+}
+.homeNav .logoabout {
+  width: 92px;
+  height: 38px;
+  border-color: white;
+  border-style: solid;
+  border-width: 2px;
+}
+.homeNav .logoabout p {
+  font-size: 20px;
+  color: white;
+  margin-top: 17px;
+  letter-spacing: 1.8px;
+}
+.homeNav .linksabout {
+  width: 542px;
+  height: 42px;
+  align-self: center;
+  display: flex;
+}
+.homeNav .linksabout a {
+  text-decoration: none;
+  color: white;
+  margin: auto;
+  font-size: 15px;
+}
+.homeNav .linksabout .linea {
+  color: #79ADDC;
+  margin-top: 10px;
+}
+
 .hero {
-  max-width: 1280px;
+  max-width: 100%;
   height: 500px;
   margin: 0 auto;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-top: 30px;
+  padding-top: 50px;
 }
 .hero .homeText {
   margin-top: 89px;
   max-width: 1280px;
   text-align: center;
   color: #fff;
+  margin-left: 300px;
 }
 .hero .homeText .title {
   font-size: 60px;
@@ -73,14 +117,17 @@ p {
 }
 
 @media only screen and (max-width: 1060px) {
+  .homeText {
+    width: 300px;
+  }
   .homeText .title {
-    margin-left: 30px;
+    margin-left: -380px;
   }
   .homeText .homesentence {
-    margin-left: 30px;
+    margin-left: -380px;
   }
   .homeText .homeButton {
-    margin-left: 30px;
+    margin-left: -380px;
   }
 }
 .promo-tours {
@@ -207,7 +254,7 @@ p {
   }
 }
 footer {
-  max-width: 1280px;
+  max-width: 100%;
   height: 100px;
   margin: 0 auto;
   background-color: #79ADDC;
@@ -216,6 +263,7 @@ footer {
   color: white;
   padding-top: 45px;
   font-family: GillSans;
+  bottom: 0;
 }
 footer .logofoot {
   width: 92px;
@@ -536,62 +584,24 @@ footer .socials {
     width: 276px;
   }
 }
-nav {
-  max-width: 980px;
-  height: 60px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  border-bottom: #fff solid 2px;
-  font-family: GillSans;
-}
-nav .logo {
-  width: 92px;
-  height: 38px;
-  border-color: white;
-  border-style: solid;
-  border-width: 2px;
-}
-nav .logo p {
-  font-size: 20px;
-  color: white;
-  margin-top: 17px;
-  letter-spacing: 1.8px;
-}
-nav .links {
-  width: 542px;
-  height: 42px;
-  align-self: center;
-  display: flex;
-}
-nav a {
-  text-decoration: none;
-  color: #fff;
-  margin: auto;
-  font-size: 15px;
-}
-nav .line {
+.line {
   color: #79ADDC;
   margin-top: 10px;
 }
 
-@media only screen and (max-width: 1280px) {
-  nav {
-    padding-left: 10px;
-  }
-}
 @media only screen and (max-width: 655px) {
-  nav {
-    padding-left: 10px;
+  .homeNav {
+    margin-left: 0px;
+    padding: 10px;
   }
-  nav .logo {
+  .homeNav .logoabout {
     width: 92px;
     height: 42px;
     border-color: white;
     border-style: solid;
     border-width: 2px;
   }
-  nav .logo p {
+  .homeNav .logoabout p {
     font-size: 13px;
     color: white;
     margin-top: 19px;
@@ -686,6 +696,9 @@ nav .line {
     padding: 10px;
     padding-top: 98px;
   }
+  .about .client {
+    flex-direction: column;
+  }
 }
 .navabout {
   max-width: 980px;
@@ -696,6 +709,7 @@ nav .line {
   border-bottom: black solid 2px;
   font-family: GillSans;
   margin-top: 27px;
+  width: 100%;
 }
 .navabout .logoabout {
   width: 92px;
